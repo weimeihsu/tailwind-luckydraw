@@ -32,6 +32,9 @@
                 >
                   <div class="flex-auto p-5 lg:p-8">
                     <h4 class="text-2xl font-semibold">1.填寫基本資料</h4>
+                    <div class="p-2 mt-4 text-sm rounded-lg bg-blue-400" role="alert">
+                      <span class="font-medium">提醒您：</span> 「此活動僅限國防部所屬人員參加，如經查證不實，將取消中獎資格」
+                    </div>
                     
                     <div class="w-full mb-3 mt-8 px-3">
                       <label
@@ -128,24 +131,12 @@
                         style="transition: all 0.15s ease 0s;"
                       />
                     </div>
-                    <div class="w-full mb-3 px-3">
-                      <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        for=""
-                        >信箱</label
-                      ><input
-                        type=""
-                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder=""
-                        style="transition: all 0.15s ease 0s;"
-                      />
-                    </div>
                     <div class="flex flex-wrap flex-row mb-3">
                       <div class="w-full lg:w-6/12 px-3">
                         <label
                           class="block uppercase text-gray-700 text-xs font-bold mb-2"
                           for=""
-                          >心輔App帳號</label
+                          >生日</label
                         ><input
                           type=""
                           class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
@@ -166,15 +157,7 @@
                         />
                       </div>
                     </div>
-                    <div class="text-center mt-6">
-                      <button
-                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                        style="transition: all 0.15s ease 0s;"
-                      >
-                        送出
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -205,196 +188,44 @@
               <div class="w-full lg:w-12/12 px-4">
                 <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 p-5"
                 >
-                <h4 class="text-2xl font-semibold">2.App問卷填寫</h4>
+                <h4 class="text-2xl font-semibold">2.有獎徵答</h4>
                   <div class="relative flex flex-col mt-8">
-                    <p class="font-bold">您知道『e心守護』有提供哪幾項內容？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">檢測Try</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">Fun輕鬆</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">充電站</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">解憂Bar</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">卡拉OK</p>
-                      </div>   
-                    </div>
-                    <p class="font-bold">您知道App內『測驗Try』有提供哪些自我檢測工具？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">檢測Try</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">簡式健康量表</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">憂鬱焦慮與壓力量表</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">人際依附風格量表</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">快樂指數量表</p>
-                      </div>
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">睡眠自我評估量表</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">職場壓力量表</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">台灣人憂鬱症量表</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">AI語音情緒檢測</p>
-                      </div>     
-                    </div>
-                    <p class="font-bold">您知道體驗『AI語音情緒檢測』說話錄製音檔需要最短時間為何？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">10秒</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">30秒</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">60秒</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">120秒</p>
-                      </div>     
-                    </div>
-                    <p class="font-bold">您知道App內『解憂Bar』有提供哪些心理協助相關資訊？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">縣市心理諮商所</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">縣市社會工作事務所</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">縣市心理治療所</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">國軍醫院</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">國軍服務專線</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">國軍地區心理衛生中心</p>
-                      </div>     
-                    </div>
-                    <p class="font-bold">您覺得使用『e心守護』可能發揮什麼效果？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">放鬆舒壓</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">自我探索</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">自我照護</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">心靈成長</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">排憂解愁</p>
-                      </div>
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">提升抗壓</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">運用資源</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">自助人助</p>
-                      </div>   
-                    </div>
-                    <p class="font-bold">您會想多花時間使用『e心守護』的哪個功能？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">檢測Try</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">Fun輕鬆</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">充電站</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">解憂Bar</p>
-                      </div>     
-                    </div>
-                    <p class="font-bold">您覺得『e心守護』那個功能對自己最有幫助？</p>
-                    <div class="flex flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">檢測Try</p>
-                      </div> 
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">Fun輕鬆</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">充電站</p>
-                      </div>   
-                      <div class="flex h-4 items-center mr-2">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                        <p class="text-gray-500 ml-2">解憂Bar</p>
-                      </div> 
-                        
-                         
-                    </div>
-                    <p class="font-bold">您覺得『e心守護』未來增加什麼功能，可以吸引大家經常使用？</p>
+                    <p class="font-bold">問題一</p>
                     <div class="relative flex-row flex-wrap mb-4">
                       <div class="flex h-4 items-center">
                         <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
                       </div>      
+                    </div> <p class="font-bold">問題二</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <div class="flex h-4 items-center">
+                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                      </div>      
+                    </div> <p class="font-bold">問題三</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <div class="flex h-4 items-center">
+                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                      </div>      
+                    </div>
+                    <p class="font-bold">問題四</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <div class="flex h-4 items-center">
+                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                      </div>      
+                    </div>
+                    <p class="font-bold">問題五</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <div class="flex h-4 items-center">
+                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                      </div>      
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        送出
+                      </button>
                     </div>
                   </div>
                 </div>
