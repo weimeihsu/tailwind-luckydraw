@@ -4,12 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -18,12 +12,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
-    <title>Login | Tailwind Starter Kit by Creative Tim</title>
+    <title>Form</title>
   </head>
   <body class="text-gray-800 antialiased">
     <main>
       <section class="absolute w-full"
-      style="background-image: url(./assets/img/stock-photo-application-form-on-the-website-enter-your-username-and-password-in-the-browser-colorful-computer-2174358855.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+      style="background-image: url(./assets/img/bg-login.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
         <div class="container mx-auto px-4">
           <div class="container mx-auto px-4 pt-8">
             <div class="flex flex-wrap justify-center">
@@ -132,19 +126,7 @@
                       />
                     </div>
                     <div class="flex flex-wrap flex-row mb-3">
-                      <div class="w-full lg:w-6/12 px-3">
-                        <label
-                          class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                          for=""
-                          >生日</label
-                        ><input
-                          type=""
-                          class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                          placeholder=""
-                          style="transition: all 0.15s ease 0s;"
-                        />
-                      </div>
-                      <div class="w-full lg:w-6/12 px-3">
+                      <div class="w-full px-3">
                         <label
                           class="block uppercase text-gray-700 text-xs font-bold mb-2"
                           for=""
@@ -167,19 +149,19 @@
                 >
                   <div class="flex-auto p-5 lg:p-8">
                     <h4 class="text-2xl font-semibold">請閱讀個人資料蒐集告知事項</h4>
-                    <ol class="bee-row-content bee-col-w8 mt-8 px-3">
+                    <ul class="bee-row-content bee-col-w8 mt-8 px-3 list-decimal ml-2">
                       <li>本人同意參加國防部「e心守護」心輔App網路推廣抽獎活動，並提供真實身分證字號、姓名、單位、階級、電話、地址、e-mail等資料，以作為主辦單位辦理抽獎、聯繫、寄發得獎人獎品及申報所得扣繳之用；並保證所填寫之資料均為真實，且無偽、冒用他人個人資料情事。參與本活動之個人資料，如涉及個人資料保護等事項者，由國防部依相關法令規定辦理。
                       </li>
                       <li>當事人得行使之權利及方式，交付本部之個人資料者，依個人資料保護法第3條得行使以下權利：</li>
-                          <ol>
+                          <ul class="list-disc ml-3">
                               <li>查詢或請求閱覽。</li>
                               <li>請求製給複製本。</li>
                               <li>請求補充或更正。</li>
                               <li>請求停止蒐集、處理或利用。</li>
                               <li>請求刪除。</li>
-                          </ol>
-                    </ol>
-                    <p class="px-3">行使方式：如有上列之請求，您可來電洽詢（02）85099062-4。<br>活動參加者視同已完整閱讀本告知事項內容，且同意以電子文件（本網頁）提供個人資料。 </p>
+                          </ul>
+                    </ul>
+                    <p class="px-3 mt-2">行使方式：如有上列之請求，您可來電洽詢（02）85099062-4。<br>活動參加者視同已完整閱讀本告知事項內容，且同意以電子文件（本網頁）提供個人資料。 </p>
                   </div>
                 </div>
               </div>
@@ -190,32 +172,304 @@
                 >
                 <h4 class="text-2xl font-semibold">2.有獎徵答</h4>
                   <div class="relative flex flex-col mt-8">
-                    <p class="font-bold">問題一</p>
+                    <p class="font-bold">113年心理健康月主題為何？</p>
                     <div class="relative flex-row flex-wrap mb-4">
                       <div class="flex h-4 items-center">
-                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
-                      </div>      
-                    </div> <p class="font-bold">問題二</p>
-                    <div class="relative flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center">
-                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
-                      </div>      
-                    </div> <p class="font-bold">問題三</p>
-                    <div class="relative flex-row flex-wrap mb-4">
-                      <div class="flex h-4 items-center">
-                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                        <textarea rows="1" class="block w-full rounded border-gray-300"></textarea>
                       </div>      
                     </div>
-                    <p class="font-bold">問題四</p>
+                    <p class="font-bold">113年國軍鏈結民間輔導資源方案中，合作諮商所共計有幾家？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">113</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">114</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">115</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">116</label>
+                  </div> 
+                    <p class="font-bold">國軍心輔專線電話為何？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">0800-536180</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">0800-785885</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">0800-221760</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">0800-081400</label>
+                    </div> 
+                    <p class="font-bold">衛生福利部安心專線為何？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">1925</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1995</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1980</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1922</label>
+                    </div> 
+                    <p class="font-bold">請您想一個心輔標語（禁止任何包含歧視、挑釁、謾罵、使用不雅字詞或人身攻擊...等內容）</p>
+                    <p>*限5-8字</p>
                     <div class="relative flex-row flex-wrap mb-4">
                       <div class="flex h-4 items-center">
-                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                        <textarea rows="1" class="block w-full rounded border-gray-300"></textarea>
                       </div>      
                     </div>
-                    <p class="font-bold">問題五</p>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        送出
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center">
+              <div class="w-full lg:w-12/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 p-5"
+                >
+                <h4 class="text-2xl font-semibold">2.有獎徵答</h4>
+                  <div class="relative flex flex-col mt-8">
+                    <p class="font-bold">國軍心輔三級轉介機制為一問二應三「」？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">轉介</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">轉彎</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">轉銜</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">轉交</label>
+                    </div>
+                    <p class="font-bold">113年國軍鏈結民間輔導資源方案中，合作諮商所共計有幾家？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">51</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">50</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">49</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">48</label>
+                    </div> 
+                    <p class="font-bold">衛生福利部長照專線為何？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">1966</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1980</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1995</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1922</label>
+                    </div> 
+                    <p class="font-bold">中區心理衛生中心設置於？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">國軍臺中總醫院</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍桃園總醫院</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍左營總醫院</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍花蓮總醫院</label>
+                    </div> 
+                    <p class="font-bold">請您想一個心輔標語（禁止任何包含歧視、挑釁、謾罵、使用不雅字詞或人身攻擊...等內容）</p>
+                    <p>*限5-8字</p>
                     <div class="relative flex-row flex-wrap mb-4">
                       <div class="flex h-4 items-center">
-                        <textarea rows="4" class="block w-full rounded border-gray-300"></textarea>
+                        <textarea rows="1" class="block w-full rounded border-gray-300"></textarea>
+                      </div>      
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        送出
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center">
+              <div class="w-full lg:w-12/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 p-5"
+                >
+                <h4 class="text-2xl font-semibold">2.有獎徵答</h4>
+                  <div class="relative flex flex-col mt-8">
+                    <p class="font-bold">「世界自殺防治日」訂於？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">9月10日</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">12月25日</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">10月10日</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">9月3日</label>
+                    </div> 
+                    <p class="font-bold">113年國軍鏈結民間輔導資源方案中，中部合作諮商所共計有幾家？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">17</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">18</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">19</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">20</label>
+                  </div> 
+                    <p class="font-bold">衛生福利部安心專線為何？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">1925</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1995</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1980</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1922</label>
+                    </div> 
+                    <p class="font-bold">南區心理衛生中心設置於？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">國軍高雄總醫院</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍桃園總醫院</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍左營總醫院</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍花蓮總醫院</label>
+                    </div> 
+                    <p class="font-bold">請您想一個心輔標語（禁止任何包含歧視、挑釁、謾罵、使用不雅字詞或人身攻擊...等內容）</p>
+                    <p>*限5-8字</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <div class="flex h-4 items-center">
+                        <textarea rows="1" class="block w-full rounded border-gray-300"></textarea>
+                      </div>      
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        送出
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap justify-center">
+              <div class="w-full lg:w-12/12 px-4">
+                <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 p-5">
+                <h4 class="text-2xl font-semibold">2.有獎徵答</h4>
+                  <div class="relative flex flex-col mt-8">
+                    <p class="font-bold">「世界心理健康日」訂於？</p>                  
+                      <div class="relative flex-row flex-wrap mb-4">
+                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                        <label for="default-radio-1" class="mr-4">10月10日</label>
+  
+                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                        <label for="default-radio-1"  class="mr-4">4月2日</label>
+                    
+                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                        <label for="default-radio-1"  class="mr-4">5月2日</label>
+  
+                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                        <label for="default-radio-1"  class="mr-4">10月21日</label>
+                      </div>     
+                    <p class="font-bold">113年國軍鏈結民間輔導資源方案中，南部合作諮商所共計有幾家？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">45</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">46</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">47</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">48</label>
+                    </div> 
+                    <p class="font-bold">衛生福利部長照專線為何？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">1966</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1980</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1995</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">1922</label>
+                    </div> 
+                    <p class="font-bold">北區心理衛生中心設置於？</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1" class="mr-4">國軍桃園總醫院</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍高雄總醫院</label>
+                  
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍左營總醫院</label>
+
+                      <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 mb-1 focus:ring-blue-500">
+                      <label for="default-radio-1"  class="mr-4">國軍花蓮總醫院</label>
+                    </div> 
+                    <p class="font-bold">請您想一個心輔標語（禁止任何包含歧視、挑釁、謾罵、使用不雅字詞或人身攻擊...等內容）</p>
+                    <p>*限5-8字</p>
+                    <div class="relative flex-row flex-wrap mb-4">
+                      <div class="flex h-4 items-center">
+                        <textarea rows="1" class="block w-full rounded border-gray-300"></textarea>
                       </div>      
                     </div>
                     <div class="text-center mt-6">
